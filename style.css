@@ -1,0 +1,707 @@
+/* 全体共通のところ */
+body {
+    margin: 0;
+    font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ヘッダーのところ */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+header .header-top {
+    border-top: 6px solid #a6272d;
+    border-bottom: 1px solid #a6272d;
+}
+
+header .wrap {
+    margin: 0 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #4d4d4d;
+}
+
+header h1 a {
+    color: #a6272d;
+}
+
+header .contact {
+    text-align: center;
+}
+
+header .ttl {
+    margin: 0;
+    font-size: 14px;
+}
+
+header .tel {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header .time {
+    margin: 0;
+    font-size: 10px;
+}
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav li {
+    width: calc(100% / 5);
+}
+
+header nav li + li {
+    border-left: 0.5px solid #666666;
+}
+
+header nav li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 28px;
+}
+
+header nav li:hover {
+    border-bottom: 5px solid #a6272d;
+}
+
+header ul .ja {
+    font-size: 14px;
+    color: black;
+}
+
+header ul .en {
+    font-size: 10px;
+    color: #4d4d4d;
+}
+
+/* メインのところ */
+/* 料金のところ */
+main .space {
+    height: 135px;
+}
+
+main .ttl-area {
+    width: 100%;
+    height: 300px;
+    background-image: url(img/price.png);
+    background-size: cover;
+}
+
+main .ttl-mask {
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .ttl {
+    width: 200px;
+    line-height: 32px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 10px 10px 0 0 #a6272d;
+    display: flex;
+    flex-direction: column;
+}
+
+main .ttl .ja {
+    color: black;
+    font-size: 24px;
+} 
+
+main .ttl .en {
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* 料金プラン */
+main .plan {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+main .wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .plan-ttl {
+    text-align: center;
+    margin: 30px 0;
+}
+
+main .marker {
+    background: linear-gradient(transparent 60%, #ffff00 0%);
+}
+
+main .plan li a {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    color: black;
+}
+
+main .plan .small a{
+    border-top: 8px solid skyblue;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+main .plan .small a:hover {
+    font-weight: bold;
+    box-shadow: 0px 15px 20px skyblue;
+    transform: translateY(-7px);
+}
+
+main .plan .middle a{
+    border-top: 8px solid #a6272d;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+main .plan .middle a:hover {
+    font-weight: bold;
+    box-shadow: 0px 15px 20px #b44c51;
+    transform: translateY(-7px);
+}
+
+main .plan .large a{
+    border-top: 8px solid rgb(108, 146, 4);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+main .plan .large a:hover {
+    font-weight: bold;
+    box-shadow: 0px 15px 20px rgb(108, 146, 4);
+    transform: translateY(-7px);
+}
+
+main .plan li div {
+    width: 50%;
+}
+
+main .plan li .price {
+    width: 50%;
+}
+
+main .plan div + p {
+    border-left: .5px solid #000;
+}
+
+main .plan li .target {
+    font-size: 16px;
+}
+
+main .plan li span {
+    font-size: 12px;
+}
+
+/* 各料金プラン詳細 */
+main .bgcolor {
+    background-color: whitesmoke;
+}
+
+main .plan-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+main .plan-name  {
+    width: 30%;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    }
+
+main .plan-box p {
+    width: 50%;
+}
+
+main table {
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+main th {
+    font-weight: normal;
+}
+
+main table td {
+    border: solid 1.5px white;
+    line-height: 36px;
+    padding: 0 20px;
+}
+
+main .table-name {
+    text-align: center;
+}
+
+main table td span {
+    font-size: 10px;
+}
+
+main .order-btn {
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+main .order-btn a {
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 30px;
+}
+
+
+/* 各詳細の色指定 */
+/* ちょこっとプラン */
+main .plan1-color .plan-name {
+    background-color: white;
+    box-shadow: 8px 8px 0 0 skyblue;
+}
+
+main .plan1-color .order-btn {
+    background-color: skyblue;
+    box-shadow: 0 8px 0 0 rgb(68, 140, 168);
+}
+
+main .plan1-color .order-btn:active{
+    box-shadow: none;
+    transform: translate3d(0, 8px, 0);
+}
+
+/* お家でゴロゴロプラン */
+main .plan2-color .plan-name {
+    background-color: whitesmoke;
+    box-shadow: 8px 8px 0 0 #a6272d;
+}
+
+main .plan2-color table td {
+    border: solid 1.5px whitesmoke;
+}
+
+main .plan2-color .order-btn {
+    background-color: #a6272d;
+    box-shadow: 0 8px 0 0 #631b1f;
+}
+
+main .plan2-color .order-btn:active {
+    box-shadow: none;
+    transform: translate3d(0, 8px, 0);
+}
+
+/* 冬眠プラン */
+main .plan3-color .plan-name {
+    background-color: white;
+    box-shadow: 8px 8px 0 0 rgb(108, 146, 4);
+}
+
+main .plan3-color .order-btn {
+    background-color: rgb(108, 146, 4);
+    box-shadow: 0 8px 0 0 rgb(70, 92, 9);
+}
+
+main .plan3-color .order-btn:active {
+    box-shadow: none;
+    transform: translate3d(0, 8px, 0);
+}
+
+/* フッターのところ */
+footer .footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+footer .footer a {
+    font-weight: normal;
+    font-size: 24px;
+    color: #A6272D;
+}
+
+footer .footer ul {
+    font-size: 10px;
+    color: #666666;
+}
+
+footer .footer h1 {
+    margin: 0 10px;
+}
+
+footer h1, p {
+    margin: 0;
+}
+
+footer .end {
+    background-color: #A6272D;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* 中くらいのサイズの時 */
+@media screen and (max-width: 959px) {
+/* 料金プラン */
+main .plan {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+main .wrap {
+    width: 90%;
+}
+
+main .plan li .target {
+    font-size: 10px;
+}
+
+main .plan li span {
+    font-size: 8px;
+}
+
+/* 各料金プラン詳細 */
+main .plan-name  {
+    width: 30%;
+    font-size: 14px;
+    line-height: 40px;
+    }
+
+main .plan-box p {
+    width: 50%;
+    font-size: 12px;
+}
+
+main table {
+    font-size: 12px;
+}
+
+main table td {
+    line-height: 28px;
+    padding: 0 5px;
+}
+
+main table td span {
+    font-size: 6px;
+}
+
+main .order-btn a {
+    font-size: 16px;
+}
+
+
+}
+
+/* 小さいサイズの時 */
+@media screen and (max-width: 559px) {
+    /* ハンバーガーメニューがんばるぞい */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 6px solid #a6272d;
+    border-bottom: 1px solid #a6272d;
+}
+
+header .header-top {
+    border-top: 0 solid #a6272d;
+    border-bottom: 0 solid #a6272d;
+}
+
+header .wrap {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 8px;
+}
+
+
+header .ttl {
+    font-size: 8px;
+}
+
+header .tel {
+    font-size: 10px;
+}
+
+header .time {
+    font-size: 4px;
+}
+
+header nav ul {
+    flex-direction: column;
+}
+
+header nav li {
+    width: 100%;
+}
+
+header nav li + li {
+    border-top: 0.5px solid #666666;
+}
+
+header nav li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 28px;
+}
+
+header nav li:hover {
+    border-bottom: 0px solid #a6272d;
+    background-color: whitesmoke;
+}
+
+
+header ul .ja {
+    font-size: 14px;
+    color: black;
+}
+
+header ul .en {
+    font-size: 10px;
+    color: #4d4d4d;
+}
+
+ 
+/* ハンバーガーメニューの見た目 */
+.menuButton {
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.menuButton div {
+    height: 3px;
+    width: 60%;
+    border-radius: 3px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+}
+
+.menuButton div:nth-of-type(1) {
+    transform: translate(-50%, -12px);
+}
+
+.menuButton div:nth-of-type(3) {
+    transform: translate(-50%, 10px);
+}
+
+/* ハンバーガーメニューをクリックした後バツになる動き */
+.menuButton.active div:nth-of-type(2) {
+    opacity: 0;
+}
+.menuButton.active div:nth-of-type(1) {
+    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+}
+.menuButton.active div:nth-of-type(3) {
+    transform: rotate(-45deg) translate(-50%, 0);
+    transform-origin: 0% 50%;
+}
+
+/* ドロップダウンメニュー */
+nav {
+    width: 100%;
+    visibility: hidden;
+    transition: .5s;
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    top: -300px;
+    left: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    box-shadow: 0 1px 3px 3px gray;
+}
+
+nav a {
+    color: gray;
+}
+
+nav.active {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+}
+    
+/* メインのところ */
+main .space {
+    height: 62px;
+}
+
+main .ttl-area {
+    width: 100%;
+    height: 150px;
+}
+
+main .ttl {
+    width: 110px;
+    line-height: 20px;
+    box-shadow: 7px 7px 0 0 #a6272d;
+}
+
+main .ttl .ja {
+    font-size: 18px;
+} 
+
+main .ttl .en {
+    font-size: 10px;
+}
+
+/* 料金プラン */
+main .plan {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+main .wrap {
+    width: 90%;
+}
+
+main .plan li a {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+main .plan li div {
+    width: 95%;
+}
+
+main .plan li .price {
+    width: 95%;
+}
+
+main .plan div + p {
+    border-top: .5px solid gray;
+    border-left: 0px solid #000;
+}
+
+main .plan li .target {
+    font-size: 10px;
+}
+
+main .plan li span {
+    font-size: 6px;
+}
+
+/* 各料金プラン詳細 */
+main .plan-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0;
+}
+
+main .plan-name  {
+    width: 80%;
+    }
+
+main .plan-box p {
+    margin-top: 30px;
+    width: 80%;
+}
+
+main table {
+    font-size: 14px;
+}
+
+main table td {
+    font-size: 14px;
+    line-height: 28px;
+    padding: 0 5px;
+}
+main table td span {
+    font-size: 6px;
+}
+
+main .order-btn {
+    margin: 20px 0;
+}
+
+/* フッターのところ */
+footer .footer a {
+    font-size: 20px;
+}
+
+footer .footer ul {
+    font-size: 6px;
+}
+
+footer p {
+    font-size: 6px;
+}
+
+}
